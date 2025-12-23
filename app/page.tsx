@@ -10,7 +10,7 @@ export default function HomePage() {
     <div>
 
       {/* HERO */}
-      <section className="min-h-[70vh] flex items-center">
+      <section className="min-h-[80vh] flex items-center py-16">
         <div className="max-w-3xl px-6 md:px-0 mx-auto text-center">
 
           {/* MAIN HEADING */}
@@ -24,25 +24,26 @@ export default function HomePage() {
             reduce brokers, duplicates, and misleading posts.
           </p>
 
-          {/* TRUST BADGES */}
-          <div className="mt-8 flex justify-center gap-6 text-sm text-textSecondary">
+          {/* TRUST BADGES (MOBILE SAFE) */}
+          <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-textSecondary">
             <span>✔ Owner-listed</span>
             <span>✔ Admin verified</span>
             <span>✔ No brokerage</span>
           </div>
 
-          {/* CTA */}
+          {/* PRIMARY CTA */}
           <div className="mt-10">
             <Link
               href="/listings"
               className="inline-block bg-primary text-white px-8 py-3 rounded-xl text-base font-medium hover:opacity-90 transition"
             >
-              Explore homes
+              View verified homes
             </Link>
           </div>
 
+          {/* MICRO-COPY */}
           <p className="mt-6 text-sm text-textSecondary">
-            No spam calls. No hidden brokers. No fake listings.
+            Direct owner contact. No brokers. No pressure.
           </p>
 
         </div>
@@ -50,8 +51,8 @@ export default function HomePage() {
 
       {/* TRUST STRIP */}
       <section className="border-t border-border bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-textSecondary text-center">
+        <div className="max-w-6xl mx-auto px-6 py-14">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-textSecondary text-center">
 
             <div>
               <p className="font-medium text-textPrimary mb-1">
@@ -93,14 +94,15 @@ export default function HomePage() {
           </h2>
 
           <p className="text-textSecondary mb-8">
-            Take your time. Browse calmly. Contact owners only when you’re comfortable.
+            Take your time. Browse calmly. Connect only when you’re comfortable.
           </p>
 
+          {/* SECONDARY CTA */}
           <Link
             href="/listings"
             className="inline-block bg-primary text-white px-10 py-4 rounded-xl text-base font-medium hover:opacity-90 transition"
           >
-            Explore homes
+            Browse listings
           </Link>
 
         </div>
