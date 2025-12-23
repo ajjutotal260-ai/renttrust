@@ -1,0 +1,2 @@
+// CHANGE THIS PASSWORD BEFORE PUBLISH
+export const ADMIN_PASSWORD = "gabbarsingh123";
